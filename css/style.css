@@ -13,7 +13,6 @@ body {
   font-family: "Lexend Deca", sans-serif;
 }
 main {
-  display: flex;
   width: 90%;
   min-width: 327px;
   margin: 50px 0 50px;
@@ -55,6 +54,7 @@ img {
   width: 146px;
   height: 48px;
   background-color: hsl(0, 0%, 95%);
+  border: 2px solid transparent;
   border-radius: 25px;
   text-align: center;
   line-height: 48px;
@@ -75,4 +75,30 @@ footer {
 footer a {
   text-decoration: none;
   color: black;
+}
+@media (min-width: 850px) {
+  main {
+    max-width: 920px;
+  }
+  section {
+    display: flex;
+  }
+  .model {
+    width: 40%;
+  }
+  .sedans {
+    border-radius: 8px 0 0 8px;
+  }
+  .luxury {
+    border-radius: 0 8px 8px 0;
+  }
+  .model a:hover {
+    background-color: transparent;
+    border: 2px solid white;
+  }
+  .sedans a:hover,
+  .suvs a:hover,
+  .luxury a:hover {
+    color: white;
+  }
 }
